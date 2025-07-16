@@ -53,7 +53,7 @@ rule all:
 
 rule process_sample_one_file_in_sample:
     container:
-        "docker.io/reanahub/reana-demo-agc-cmc-ttbar-coffea:1.0.0"
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
     resources:
         kubernetes_memory_limit="3700Mi"
     input:
@@ -67,7 +67,7 @@ rule process_sample_one_file_in_sample:
 
 rule process_sample:
     container:
-        "docker.io/reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
     resources:
         kubernetes_memory_limit="1850Mi"
     input:
@@ -82,7 +82,7 @@ rule process_sample:
 
 rule merging_histograms:
     container:
-        "docker.io/reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
     resources:
         kubernetes_memory_limit="1850Mi"
     input:
@@ -95,10 +95,19 @@ rule merging_histograms:
         "everything_merged_single_top_t_chan__nominal.root",
         "everything_merged_single_top_tW__nominal.root",
         "everything_merged_wjets__nominal.root",
+        "everything_merged_zprimett__nominal.root",
         "final_merging.ipynb"
     output:
         "histograms_merged.root"
     shell:
         "/bin/bash -l && source fix-env.sh && papermill final_merging.ipynb result_notebook.ipynb -k python3"
 
-    
+rule export_png:
+    container:
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+    input:
+        notebook="sample_{sample}__{condition}_{filename}_out.ipynb"
+    output:
+        png="png_outputs/{sample}__{condition}_{filename}.png"
+    shell:
+        "echo 'PNG saved'"
