@@ -1,4 +1,4 @@
-N_FILES_MAX_PER_SAMPLE = -1
+N_FILES_MAX_PER_SAMPLE = 1
 download_sleep = 0
 url_prefix = "root://eospublic.cern.ch//eos/opendata"
 #In order to run analysis from Nebraska use this prefix
@@ -6,9 +6,9 @@ url_prefix = "root://eospublic.cern.ch//eos/opendata"
 import glob
 import json
 import os
+
 def extract_samples_from_json(json_file):
     output_files = []
-    
     with open(json_file, "r") as fd:
         data = json.load(fd)
 
@@ -49,7 +49,12 @@ def get_items(json_file):
 
 rule all:
     input:
-        "histograms_merged.root"
+        "histograms_merged.root",
+        "png_outputs/final_stack_histogram_4j1b.png",
+        "png_outputs/stack_4j2b_nominal.png",
+        "png_outputs/btagging_variations_4j1b_ttbar.png",
+        "png_outputs/jet_energy_variations_4j2b_ttbar.png"
+        
 
 rule process_sample_one_file_in_sample:
     container:
@@ -101,13 +106,29 @@ rule merging_histograms:
         "histograms_merged.root"
     shell:
         "/bin/bash -l && source fix-env.sh && papermill final_merging.ipynb result_notebook.ipynb -k python3"
-
+        
 rule export_png:
     container:
         "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
     input:
-        notebook="sample_{sample}__{condition}_{filename}_out.ipynb"
+        notebook="sample_{sample}__{condition}_out.ipynb",
+        png="png_outputs/{sample}__{condition}.png"
     output:
-        png="png_outputs/{sample}__{condition}_{filename}.png"
+        png="png_outputs/{sample}__{condition}.png"
     shell:
-        "echo 'PNG saved'"
+        "echo 'PNG already saved in notebook'"
+
+rule final_stack_histogram:
+    container:
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+    input:
+        "histograms_merged.root",
+        "plot_final_stack.py"
+    output:
+        "png_outputs/final_stack_histogram_4j1b.png",
+        "png_outputs/stack_4j2b_nominal.png",
+        "png_outputs/btagging_variations_4j1b_ttbar.png",
+        "png_outputs/jet_energy_variations_4j2b_ttbar.png"
+
+    shell:
+        "/bin/bash -l && source fix-env.sh && python plot_final_stack.py"

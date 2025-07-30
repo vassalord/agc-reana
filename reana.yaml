@@ -9,7 +9,7 @@ inputs:
     - file_merging.ipynb
     - final_merging.ipynb
     - prepare_workspace.py
-
+    - plot_final_stack.py
   directories:
     - histograms
     - utils
@@ -21,3 +21,4 @@ workflow:
 outputs:
   files:
     - histograms_merged.root
+    - png_outputs/final_stack_histogram_4j1b.png
