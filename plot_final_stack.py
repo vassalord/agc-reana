@@ -17,7 +17,7 @@ PROCESS_ORDER = [
     "single_top_s_chan",
     "wjets",
     "ttbar",
-    "zprimett"
+    "zprimett4000"
 ]
 
 def parse_key(key):

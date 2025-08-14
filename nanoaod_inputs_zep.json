@@ -1,553 +1,679 @@
 {
-    "zprimett": {
-        "nominal": {
-            "nevts_total": 7251052,
-            "files": [
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/04C8D68B-50D0-A341-9EAA-25D4EF095BD5.root",
-                    "nevts": 7905
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/529C7DE5-0F7C-2C4E-9438-50D7601AED78.root",
-                    "nevts": 11950
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/8994BB6F-91B5-D24F-9212-799DF51DD7E6.root",
-                    "nevts": 51756
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/AD689677-1CCA-AB48-82CC-AAC2A8A5C22F.root",
-                    "nevts": 3907
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/D613ABB8-6FBE-5042-9AD4-CF6FC3ECD490.root",
-                    "nevts": 1955
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/DA4D9314-C7F8-7346-A70B-9BA035C6D87F.root",
-                    "nevts": 1983
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/EC63521D-997E-9748-BC58-B9AD440277FD.root",
-                    "nevts": 7983
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/9DA7566C-7676-CF4E-B770-D1F939FA4017.root",
-                    "nevts": 94495
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/26D18A07-FDA2-9543-BCB8-D9BBF299C1C8.root",
-                    "nevts": 31504
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/58CCB560-DF0A-B040-B93C-46F72CEDAEB1.root",
-                    "nevts": 11051
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/8C0F8E2F-474B-8441-B804-68DE3ED2597F.root",
-                    "nevts": 19351
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/901BABC0-3CFC-7947-9068-37CAEDE6D2CF.root",
-                    "nevts": 1794
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/24976BC4-DED8-F948-9A36-6A5D8B60D1DF.root",
-                    "nevts": 35878
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/74A6E8B0-EA84-864E-8256-BD6F1F77A622.root",
-                    "nevts": 1786
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/A50C9E71-D3F8-DF49-AFFD-372B4CB79E4D.root",
-                    "nevts": 13684
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/EC16E28E-84D3-FC4A-98AB-F113E2949EE0.root",
-                    "nevts": 6545
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/F5588499-2465-2041-9866-1D4B6E96A9D7.root",
-                    "nevts": 2752
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/3F12AD00-5B77-A24C-9C60-E534B173609D.root",
-                    "nevts": 4603
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/6C18A9A1-6D62-FE4C-BA61-406E897D3780.root",
-                    "nevts": 926
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/79EBAEB2-E19C-8C47-AFD3-5731556A23C5.root",
-                    "nevts": 46076
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/C6E6D71E-71C5-CE4F-BD8F-880494F671DA.root",
-                    "nevts": 182532
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M400_W4_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/53682A49-E9C6-984F-A484-AB15E8D6F26F.root",
-                    "nevts": 567823
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M400_W4_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/D3E6C37E-FBC1-3A42-8082-7C3F876DE7AC.root",
-                    "nevts": 2304
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/253BEC5E-B67B-A244-A397-D5827E89B291.root",
-                    "nevts": 43658
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/352C7822-69D7-984A-AAD3-A85E53FCD6F4.root",
-                    "nevts": 971
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/6CFD4A80-6340-7546-B6E4-5E1CA8BB494A.root",
-                    "nevts": 14367
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/857841D6-A2DD-3B4C-BF3F-9A1674090D1D.root",
-                    "nevts": 44867
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/C900328A-C5B9-1243-B8F3-B3F2704C374E.root",
-                    "nevts": 158947
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/D026E851-ABF5-8044-9136-31EEE79451AF.root",
-                    "nevts": 4801
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/E4F521F4-6487-F843-A441-0B4F7EAB7D59.root",
-                    "nevts": 27719
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/FB7BD87F-1C09-2745-B60F-01571CBABB48.root",
-                    "nevts": 2880
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/2C2A8671-E5A1-724F-A47B-E83456132B13.root",
-                    "nevts": 76874
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/89A7B514-33EB-7647-ACC2-AA87B51C775E.root",
-                    "nevts": 20009
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E29F7295-AE20-5745-B1CE-BC56585966CE.root",
-                    "nevts": 42963
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/F547247A-2C02-A84C-A5A7-BE7E4B8CC6FE.root",
-                    "nevts": 36183
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/BE3EA914-EC35-9F4A-A115-EB1E2D7A391E.root",
-                    "nevts": 926
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/E4159E52-B3F6-694B-A57E-2E4863D4E0B4.root",
-                    "nevts": 29622
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/0F132A87-24D2-BB4F-910D-1E9F97C0E6AA.root",
-                    "nevts": 191062
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/6B1DFFF2-AFB3-D04A-9E86-585F1556829C.root",
-                    "nevts": 29352
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/879430D3-4C25-2346-9082-9F4E4A1019DE.root",
-                    "nevts": 6466
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/9E915310-D0B5-2642-BEA1-F3003701FA28.root",
-                    "nevts": 29799
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/AF6CAD19-8D78-D143-9CE1-C3F306E71C7F.root",
-                    "nevts": 72213
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/BC1A4B87-1EA1-0347-9C73-D7D8767B7956.root",
-                    "nevts": 37598
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/CA9135C7-5412-FB4F-A569-D415772E682D.root",
-                    "nevts": 32326
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/E0FB1682-E23A-E74B-826A-00F150FCFA16.root",
-                    "nevts": 9330
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/F59DE93B-E3A8-D24F-9E2A-0D29BFED073D.root",
-                    "nevts": 23222
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/1E085044-C025-6F40-9ADA-7B2CADF74BC1.root",
-                    "nevts": 61358
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/4405319E-CF5D-474D-B542-22EFB2382F6F.root",
-                    "nevts": 13374
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/60D41DE2-BD34-2D4B-8FED-6DC933086FBA.root",
-                    "nevts": 28545
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/070D7749-BF24-6649-9DB5-7FCAFD6CCBBF.root",
-                    "nevts": 59950
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/AA38FAB0-C7F0-7A40-A5A9-9093248BD555.root",
-                    "nevts": 3684
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/DA2570BD-F464-A145-8468-500D86392336.root",
-                    "nevts": 36886
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/573C2F08-AFA9-8C49-8E52-B72C2B454966.root",
-                    "nevts": 14393
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/AC2E1B9B-28CA-B545-A200-CD90117C7881.root",
-                    "nevts": 55788
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D1BE8498-C3A2-1F40-A613-10ED7345A127.root",
-                    "nevts": 59309
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D778F38C-2D49-C74D-8DF6-CF0B5ABC805B.root",
-                    "nevts": 84240
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/AE95A1BA-FF46-6D49-988E-6F22508C05E5.root",
-                    "nevts": 3183
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/CDD21125-BB77-3A46-B9FA-8D26EBF0491A.root",
-                    "nevts": 5386
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/0132B912-762A-A24A-BCC7-0B06829E5E22.root",
-                    "nevts": 45160
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/0974FAF4-1FD6-844D-AB73-F6DBBC24CE53.root",
-                    "nevts": 33334
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/339A2980-C60C-1140-9A27-622D32F50133.root",
-                    "nevts": 7480
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/46319C48-5EE3-4645-AD1B-4BB4B67DE6FE.root",
-                    "nevts": 93355
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/4797F176-6177-EF4D-BC86-C3AE87099BDA.root",
-                    "nevts": 4337
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8FF10B3A-7E25-BD4B-9C33-D18C4D8E71D5.root",
-                    "nevts": 3216
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/CE77F323-3124-C34A-8DC6-B1B979E2F3E5.root",
-                    "nevts": 330850
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/F2321692-141D-8846-9DE5-10C80E66439F.root",
-                    "nevts": 22430
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/18FA5458-320E-C446-ADDB-EB275639796B.root",
-                    "nevts": 38726
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/45C71830-3F8C-DC4A-B44C-C5E5DF553F7B.root",
-                    "nevts": 4168
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/4F60A255-6BA0-904F-9ABF-1523D47B591E.root",
-                    "nevts": 48163
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/CCB58FDA-4874-F04D-91B2-DFEB0158B346.root",
-                    "nevts": 80831
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/EF8412CC-617B-CD42-83AF-42296D8EC452.root",
-                    "nevts": 2053
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/2CE2D0A7-99DF-7D4E-897D-D69225ADE0A9.root",
-                    "nevts": 51667
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/33046E5C-8BF7-9F4A-AFA6-C0F24199DBBC.root",
-                    "nevts": 13211
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/85537A20-4655-7E4B-B53D-C518421A6B7F.root",
-                    "nevts": 45081
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8EF5A767-356B-0A48-BE4C-F37D5D64BA17.root",
-                    "nevts": 46193
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/9FBEB963-86B6-244F-B680-D2B0D3152B3B.root",
-                    "nevts": 2026
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/A168AEE6-3E4E-F144-92F9-4EC1E129A631.root",
-                    "nevts": 138002
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D7894E56-72CD-B842-9AF3-F6C88E9930A1.root",
-                    "nevts": 18440
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/7935F0E5-90BF-1A4C-94AB-0F36F0F77EB7.root",
-                    "nevts": 1926
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/A90C7C35-C9DF-ED4B-8B10-4E9C9078982F.root",
-                    "nevts": 48349
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/C026E34B-D3CE-3649-A22C-EF08A7577B73.root",
-                    "nevts": 1913
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/FB269772-DDEB-4D40-9EAB-353D98B74DC2.root",
-                    "nevts": 997
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/82FC6521-3B0D-B248-8C04-B7CE619FAEED.root",
-                    "nevts": 76492
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8A1AEF65-0737-AC4B-888A-D4B82EB2A6C4.root",
-                    "nevts": 361775
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/22BAB5D2-9E3F-E440-AB30-AE6DBFDF6C83.root",
-                    "nevts": 11503
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/59B9ED38-8DDA-8049-BB4E-ACF0E257E79C.root",
-                    "nevts": 4217
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/7CFC8EB0-EC72-FD4C-8F03-CAECF5445EED.root",
-                    "nevts": 61
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/45046F71-EB72-974D-BF4A-56A9C1B44524.root",
-                    "nevts": 511498
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2500_W25_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2530000/0BDA4FA7-D5E2-EA42-B760-6CECE3A8AC7B.root",
-                    "nevts": 400890
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2500_W25_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2530000/E87D0185-9EA6-204E-87FE-2CA6D6827461.root",
-                    "nevts": 107594
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3000_W30_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2560000/29D4044F-A6F3-1A4F-979A-0335340DA92E.root",
-                    "nevts": 490008
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/47633CA9-7E5F-394E-A23B-85550A6E349C.root",
-                    "nevts": 43458
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/48D715E8-BB56-584E-886E-B23DEE5C4AFD.root",
-                    "nevts": 37725
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/B2C2D423-BD29-3347-9B4C-A405DF34D9A0.root",
-                    "nevts": 108762
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/80AAE311-8FA3-5047-AFB9-D58F2BE9FD55.root",
-                    "nevts": 5607
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/DDD5A6E1-C2C3-6345-B662-754036304D1D.root",
-                    "nevts": 13136
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E4A320B3-5BCB-8C46-A8E6-926587D858F1.root",
-                    "nevts": 52977
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/0F7B0C8C-C64D-2C44-8940-A0C8ADDE4F95.root",
-                    "nevts": 11335
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/29DEB61A-D9BD-C64F-BBA8-C0E6DF70CF5F.root",
-                    "nevts": 153819
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/388FEB7F-CCC6-5D49-A436-09356B70DE7E.root",
-                    "nevts": 9932
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/3A8D4882-F903-4245-AD56-5009B034A703.root",
-                    "nevts": 2003
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/68CD820E-C2A5-0645-B382-EB3E9F866BD1.root",
-                    "nevts": 4044
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/AF024329-6D6E-134F-AEEB-578FB154DBC2.root",
-                    "nevts": 4029
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/BB3C4F87-610F-9C41-8C36-E3892D8FBE82.root",
-                    "nevts": 7905
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/C00B850B-E6EF-0C4F-A8BA-D580957F298F.root",
-                    "nevts": 1995
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/C97B0BA1-2802-C34C-840F-5F9A223F3C6E.root",
-                    "nevts": 3965
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/DAA42B11-895A-8C40-B5D9-824BB76819AC.root",
-                    "nevts": 6026
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/FF0CC917-7953-9145-A560-B5293821D795.root",
-                    "nevts": 45974
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1DFCEB0F-DAD7-6E41-902E-490F5E586B77.root",
-                    "nevts": 4026
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/6DEADE1D-2F3A-E84A-B55D-5B4426A0E7A4.root",
-                    "nevts": 7968
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/7C710C38-C02A-9245-A742-0195EED7C877.root",
-                    "nevts": 19738
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/25310000/90C90065-3DB1-8249-BE4F-D9F562FF1697.root",
-                    "nevts": 37617
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/A02628E7-569D-B245-9108-BCAC922C28A1.root",
-                    "nevts": 5902
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/F7BFCFB9-53E8-0347-B2AA-ADC7441E3364.root",
-                    "nevts": 15976
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1176C273-1CF6-6B40-AFAB-8CDB1D7FEBE5.root",
-                    "nevts": 7918
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1F9B4E02-FDF4-FC40-A64E-7B8A277CDE2E.root",
-                    "nevts": 6000
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/2498EFEC-541C-2644-9E2A-735B84DE3F0B.root",
-                    "nevts": 5812
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/3B0E3AF5-9942-6144-895A-A5326969ABF4.root",
-                    "nevts": 17864
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/558EAA0F-59C4-C94B-9F62-F9A180823419.root",
-                    "nevts": 33735
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/8B682F7D-CB54-D84E-8602-1AE7CD4014C1.root",
-                    "nevts": 3956
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/8D3BAA83-56D1-DB44-94F2-1EA885826B10.root",
-                    "nevts": 3945
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/B0C53E66-917E-8A40-9EE9-2A5E5F681B3F.root",
-                    "nevts": 11914
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1000_W10_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/26F667E7-6DB5-4A4D-942F-21E2B081155C.root",
-                    "nevts": 449628
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/56BA85F8-58BD-8E4F-9C2E-CF7AC2EB7388.root",
-                    "nevts": 5902
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/981DF028-3D29-EB4C-A8D7-60E3F01FC1E9.root",
-                    "nevts": 21670
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/B0DF3608-0519-A94C-B326-943D2D69E4F6.root",
-                    "nevts": 60737
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/B257BC82-19A0-FB41-8649-080AAC32B155.root",
-                    "nevts": 1991
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/37CFB13E-13D3-2447-9C04-51C3EA3EB93E.root",
-                    "nevts": 282488
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/55F711C2-913F-2246-8048-8B7D0F51A297.root",
-                    "nevts": 33933
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/6AE9FF3D-739C-9A47-B3ED-F462A7DE7219.root",
-                    "nevts": 3924
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/7E8F0EF2-C135-D74B-9E87-797C9D37615B.root",
-                    "nevts": 27947
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/800F5282-18C9-A040-98D3-4B419154C459.root",
-                    "nevts": 58553
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/B67CAA37-8336-FA4C-AA3A-85F69137088E.root",
-                    "nevts": 3961
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/F02FC3F8-3711-C741-B287-4BDAC008F9EF.root",
-                    "nevts": 56699
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/D3CC29A0-7F9D-2D4A-A02B-9CC9CB946D18.root",
-                    "nevts": 22770
-                },
-                {
-                    "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E1F96BF7-C1A3-9A46-9B35-DC853841AE52.root",
-                    "nevts": 7046
-                }
-            ]
+  "zprimett1000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 449628,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1000_W10_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/26F667E7-6DB5-4A4D-942F-21E2B081155C.root"
         }
+      ],
+      "nevts_total": 449628
     }
+  },
+  "zprimett1200": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 282488,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/37CFB13E-13D3-2447-9C04-51C3EA3EB93E.root"
+        },
+        {
+          "nevts": 33933,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/55F711C2-913F-2246-8048-8B7D0F51A297.root"
+        },
+        {
+          "nevts": 3924,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/6AE9FF3D-739C-9A47-B3ED-F462A7DE7219.root"
+        },
+        {
+          "nevts": 27947,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/7E8F0EF2-C135-D74B-9E87-797C9D37615B.root"
+        },
+        {
+          "nevts": 58553,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/800F5282-18C9-A040-98D3-4B419154C459.root"
+        },
+        {
+          "nevts": 3961,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/B67CAA37-8336-FA4C-AA3A-85F69137088E.root"
+        },
+        {
+          "nevts": 56699,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/F02FC3F8-3711-C741-B287-4BDAC008F9EF.root"
+        },
+        {
+          "nevts": 22770,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/D3CC29A0-7F9D-2D4A-A02B-9CC9CB946D18.root"
+        },
+        {
+          "nevts": 7046,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M1200_W12_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E1F96BF7-C1A3-9A46-9B35-DC853841AE52.root"
+        }
+      ],
+      "nevts_total": 497321
+    }
+  },
+  "zprimett2000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 11503,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/22BAB5D2-9E3F-E440-AB30-AE6DBFDF6C83.root"
+        },
+        {
+          "nevts": 4217,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/59B9ED38-8DDA-8049-BB4E-ACF0E257E79C.root"
+        },
+        {
+          "nevts": 61,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/7CFC8EB0-EC72-FD4C-8F03-CAECF5445EED.root"
+        },
+        {
+          "nevts": 511498,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/45046F71-EB72-974D-BF4A-56A9C1B44524.root"
+        }
+      ],
+      "nevts_total": 527279
+    }
+  },
+  "zprimett2500": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 400890,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2500_W25_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2530000/0BDA4FA7-D5E2-EA42-B760-6CECE3A8AC7B.root"
+        },
+        {
+          "nevts": 107594,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M2500_W25_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2530000/E87D0185-9EA6-204E-87FE-2CA6D6827461.root"
+        }
+      ],
+      "nevts_total": 508484
+    }
+  },
+  "zprimett3000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 490008,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3000_W30_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2560000/29D4044F-A6F3-1A4F-979A-0335340DA92E.root"
+        }
+      ],
+      "nevts_total": 490008
+    }
+  },
+  "zprimett3500": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 43458,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/47633CA9-7E5F-394E-A23B-85550A6E349C.root"
+        },
+        {
+          "nevts": 37725,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/48D715E8-BB56-584E-886E-B23DEE5C4AFD.root"
+        },
+        {
+          "nevts": 108762,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/B2C2D423-BD29-3347-9B4C-A405DF34D9A0.root"
+        },
+        {
+          "nevts": 5607,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/80AAE311-8FA3-5047-AFB9-D58F2BE9FD55.root"
+        },
+        {
+          "nevts": 13136,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/DDD5A6E1-C2C3-6345-B662-754036304D1D.root"
+        },
+        {
+          "nevts": 52977,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E4A320B3-5BCB-8C46-A8E6-926587D858F1.root"
+        },
+        {
+          "nevts": 11335,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/0F7B0C8C-C64D-2C44-8940-A0C8ADDE4F95.root"
+        },
+        {
+          "nevts": 153819,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/29DEB61A-D9BD-C64F-BBA8-C0E6DF70CF5F.root"
+        }
+      ],
+      "nevts_total": 426819
+    }
+  },
+  "zprimett400": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 567823,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M400_W4_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/53682A49-E9C6-984F-A484-AB15E8D6F26F.root"
+        },
+        {
+          "nevts": 2304,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M400_W4_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/D3E6C37E-FBC1-3A42-8082-7C3F876DE7AC.root"
+        }
+      ],
+      "nevts_total": 570127
+    }
+  },
+  "zprimett4000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 94495,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/9DA7566C-7676-CF4E-B770-D1F939FA4017.root"
+        },
+        {
+          "nevts": 31504,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/26D18A07-FDA2-9543-BCB8-D9BBF299C1C8.root"
+        },
+        {
+          "nevts": 11051,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/58CCB560-DF0A-B040-B93C-46F72CEDAEB1.root"
+        },
+        {
+          "nevts": 19351,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/8C0F8E2F-474B-8441-B804-68DE3ED2597F.root"
+        },
+        {
+          "nevts": 1794,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/901BABC0-3CFC-7947-9068-37CAEDE6D2CF.root"
+        },
+        {
+          "nevts": 35878,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/24976BC4-DED8-F948-9A36-6A5D8B60D1DF.root"
+        },
+        {
+          "nevts": 1786,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/74A6E8B0-EA84-864E-8256-BD6F1F77A622.root"
+        },
+        {
+          "nevts": 13684,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/A50C9E71-D3F8-DF49-AFFD-372B4CB79E4D.root"
+        },
+        {
+          "nevts": 6545,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/EC16E28E-84D3-FC4A-98AB-F113E2949EE0.root"
+        },
+        {
+          "nevts": 2752,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/F5588499-2465-2041-9866-1D4B6E96A9D7.root"
+        },
+        {
+          "nevts": 4603,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/3F12AD00-5B77-A24C-9C60-E534B173609D.root"
+        },
+        {
+          "nevts": 926,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/6C18A9A1-6D62-FE4C-BA61-406E897D3780.root"
+        },
+        {
+          "nevts": 46076,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/79EBAEB2-E19C-8C47-AFD3-5731556A23C5.root"
+        },
+        {
+          "nevts": 182532,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4000_W40_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/C6E6D71E-71C5-CE4F-BD8F-880494F671DA.root"
+        }
+      ],
+      "nevts_total": 452977
+    }
+  },
+  "zprimett4500": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 61358,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/1E085044-C025-6F40-9ADA-7B2CADF74BC1.root"
+        },
+        {
+          "nevts": 13374,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/4405319E-CF5D-474D-B542-22EFB2382F6F.root"
+        },
+        {
+          "nevts": 28545,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/60D41DE2-BD34-2D4B-8FED-6DC933086FBA.root"
+        },
+        {
+          "nevts": 59950,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/070D7749-BF24-6649-9DB5-7FCAFD6CCBBF.root"
+        },
+        {
+          "nevts": 3684,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/AA38FAB0-C7F0-7A40-A5A9-9093248BD555.root"
+        },
+        {
+          "nevts": 36886,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/DA2570BD-F464-A145-8468-500D86392336.root"
+        },
+        {
+          "nevts": 14393,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/573C2F08-AFA9-8C49-8E52-B72C2B454966.root"
+        },
+        {
+          "nevts": 55788,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/AC2E1B9B-28CA-B545-A200-CD90117C7881.root"
+        },
+        {
+          "nevts": 59309,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D1BE8498-C3A2-1F40-A613-10ED7345A127.root"
+        },
+        {
+          "nevts": 84240,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M4500_W45_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D778F38C-2D49-C74D-8DF6-CF0B5ABC805B.root"
+        }
+      ],
+      "nevts_total": 417527
+    }
+  },
+  "zprimett500": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 3183,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/AE95A1BA-FF46-6D49-988E-6F22508C05E5.root"
+        },
+        {
+          "nevts": 5386,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/CDD21125-BB77-3A46-B9FA-8D26EBF0491A.root"
+        },
+        {
+          "nevts": 45160,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/0132B912-762A-A24A-BCC7-0B06829E5E22.root"
+        },
+        {
+          "nevts": 33334,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/0974FAF4-1FD6-844D-AB73-F6DBBC24CE53.root"
+        },
+        {
+          "nevts": 7480,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/339A2980-C60C-1140-9A27-622D32F50133.root"
+        },
+        {
+          "nevts": 93355,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/46319C48-5EE3-4645-AD1B-4BB4B67DE6FE.root"
+        },
+        {
+          "nevts": 4337,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/4797F176-6177-EF4D-BC86-C3AE87099BDA.root"
+        },
+        {
+          "nevts": 3216,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8FF10B3A-7E25-BD4B-9C33-D18C4D8E71D5.root"
+        },
+        {
+          "nevts": 330850,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M500_W5_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/CE77F323-3124-C34A-8DC6-B1B979E2F3E5.root"
+        }
+      ],
+      "nevts_total": 526301
+    }
+  },
+  "zprimett5000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 5902,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/56BA85F8-58BD-8E4F-9C2E-CF7AC2EB7388.root"
+        },
+        {
+          "nevts": 21670,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/981DF028-3D29-EB4C-A8D7-60E3F01FC1E9.root"
+        },
+        {
+          "nevts": 60737,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/B0DF3608-0519-A94C-B326-943D2D69E4F6.root"
+        },
+        {
+          "nevts": 1991,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M5000_W50_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/B257BC82-19A0-FB41-8649-080AAC32B155.root"
+        }
+      ],
+      "nevts_total": 90300
+    }
+  },
+  "zprimett600": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 22430,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/F2321692-141D-8846-9DE5-10C80E66439F.root"
+        },
+        {
+          "nevts": 38726,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/18FA5458-320E-C446-ADDB-EB275639796B.root"
+        },
+        {
+          "nevts": 4168,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/45C71830-3F8C-DC4A-B44C-C5E5DF553F7B.root"
+        },
+        {
+          "nevts": 48163,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/4F60A255-6BA0-904F-9ABF-1523D47B591E.root"
+        },
+        {
+          "nevts": 80831,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/CCB58FDA-4874-F04D-91B2-DFEB0158B346.root"
+        },
+        {
+          "nevts": 2053,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/EF8412CC-617B-CD42-83AF-42296D8EC452.root"
+        },
+        {
+          "nevts": 51667,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/2CE2D0A7-99DF-7D4E-897D-D69225ADE0A9.root"
+        },
+        {
+          "nevts": 13211,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/33046E5C-8BF7-9F4A-AFA6-C0F24199DBBC.root"
+        },
+        {
+          "nevts": 45081,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/85537A20-4655-7E4B-B53D-C518421A6B7F.root"
+        },
+        {
+          "nevts": 46193,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8EF5A767-356B-0A48-BE4C-F37D5D64BA17.root"
+        },
+        {
+          "nevts": 2026,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/9FBEB963-86B6-244F-B680-D2B0D3152B3B.root"
+        },
+        {
+          "nevts": 138002,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/A168AEE6-3E4E-F144-92F9-4EC1E129A631.root"
+        },
+        {
+          "nevts": 18440,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M600_W6_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/D7894E56-72CD-B842-9AF3-F6C88E9930A1.root"
+        }
+      ],
+      "nevts_total": 510991
+    }
+  },
+  "zprimett6000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 7905,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/04C8D68B-50D0-A341-9EAA-25D4EF095BD5.root"
+        },
+        {
+          "nevts": 11950,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/529C7DE5-0F7C-2C4E-9438-50D7601AED78.root"
+        },
+        {
+          "nevts": 51756,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/8994BB6F-91B5-D24F-9212-799DF51DD7E6.root"
+        },
+        {
+          "nevts": 3907,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/AD689677-1CCA-AB48-82CC-AAC2A8A5C22F.root"
+        },
+        {
+          "nevts": 1955,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/D613ABB8-6FBE-5042-9AD4-CF6FC3ECD490.root"
+        },
+        {
+          "nevts": 1983,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/DA4D9314-C7F8-7346-A70B-9BA035C6D87F.root"
+        },
+        {
+          "nevts": 7983,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M6000_W60_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/EC63521D-997E-9748-BC58-B9AD440277FD.root"
+        }
+      ],
+      "nevts_total": 87439
+    }
+  },
+  "zprimett700": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 1926,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/7935F0E5-90BF-1A4C-94AB-0F36F0F77EB7.root"
+        },
+        {
+          "nevts": 48349,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/A90C7C35-C9DF-ED4B-8B10-4E9C9078982F.root"
+        },
+        {
+          "nevts": 1913,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/C026E34B-D3CE-3649-A22C-EF08A7577B73.root"
+        },
+        {
+          "nevts": 997,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/FB269772-DDEB-4D40-9EAB-353D98B74DC2.root"
+        },
+        {
+          "nevts": 76492,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/82FC6521-3B0D-B248-8C04-B7CE619FAEED.root"
+        },
+        {
+          "nevts": 361775,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M700_W7_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/8A1AEF65-0737-AC4B-888A-D4B82EB2A6C4.root"
+        }
+      ],
+      "nevts_total": 491452
+    }
+  },
+  "zprimett7000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 9932,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/388FEB7F-CCC6-5D49-A436-09356B70DE7E.root"
+        },
+        {
+          "nevts": 2003,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/3A8D4882-F903-4245-AD56-5009B034A703.root"
+        },
+        {
+          "nevts": 4044,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/68CD820E-C2A5-0645-B382-EB3E9F866BD1.root"
+        },
+        {
+          "nevts": 4029,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/AF024329-6D6E-134F-AEEB-578FB154DBC2.root"
+        },
+        {
+          "nevts": 7905,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/BB3C4F87-610F-9C41-8C36-E3892D8FBE82.root"
+        },
+        {
+          "nevts": 1995,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/C00B850B-E6EF-0C4F-A8BA-D580957F298F.root"
+        },
+        {
+          "nevts": 3965,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/C97B0BA1-2802-C34C-840F-5F9A223F3C6E.root"
+        },
+        {
+          "nevts": 6026,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/DAA42B11-895A-8C40-B5D9-824BB76819AC.root"
+        },
+        {
+          "nevts": 45974,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M7000_W70_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/40000/FF0CC917-7953-9145-A560-B5293821D795.root"
+        }
+      ],
+      "nevts_total": 85873
+    }
+  },
+  "zprimett800": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 43658,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/253BEC5E-B67B-A244-A397-D5827E89B291.root"
+        },
+        {
+          "nevts": 971,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/352C7822-69D7-984A-AAD3-A85E53FCD6F4.root"
+        },
+        {
+          "nevts": 14367,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/6CFD4A80-6340-7546-B6E4-5E1CA8BB494A.root"
+        },
+        {
+          "nevts": 44867,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/857841D6-A2DD-3B4C-BF3F-9A1674090D1D.root"
+        },
+        {
+          "nevts": 158947,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/C900328A-C5B9-1243-B8F3-B3F2704C374E.root"
+        },
+        {
+          "nevts": 4801,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/D026E851-ABF5-8044-9136-31EEE79451AF.root"
+        },
+        {
+          "nevts": 27719,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/E4F521F4-6487-F843-A441-0B4F7EAB7D59.root"
+        },
+        {
+          "nevts": 2880,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/FB7BD87F-1C09-2745-B60F-01571CBABB48.root"
+        },
+        {
+          "nevts": 76874,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/2C2A8671-E5A1-724F-A47B-E83456132B13.root"
+        },
+        {
+          "nevts": 20009,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/89A7B514-33EB-7647-ACC2-AA87B51C775E.root"
+        },
+        {
+          "nevts": 42963,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E29F7295-AE20-5745-B1CE-BC56585966CE.root"
+        },
+        {
+          "nevts": 36183,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M800_W8_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/F547247A-2C02-A84C-A5A7-BE7E4B8CC6FE.root"
+        }
+      ],
+      "nevts_total": 474239
+    }
+  },
+  "zprimett8000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 4026,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1DFCEB0F-DAD7-6E41-902E-490F5E586B77.root"
+        },
+        {
+          "nevts": 7968,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/6DEADE1D-2F3A-E84A-B55D-5B4426A0E7A4.root"
+        },
+        {
+          "nevts": 19738,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/7C710C38-C02A-9245-A742-0195EED7C877.root"
+        },
+        {
+          "nevts": 37617,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/25310000/90C90065-3DB1-8249-BE4F-D9F562FF1697.root"
+        },
+        {
+          "nevts": 5902,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/A02628E7-569D-B245-9108-BCAC922C28A1.root"
+        },
+        {
+          "nevts": 15976,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/F7BFCFB9-53E8-0347-B2AA-ADC7441E3364.root"
+        }
+      ],
+      "nevts_total": 91227
+    }
+  },
+  "zprimett900": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 926,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/100000/BE3EA914-EC35-9F4A-A115-EB1E2D7A391E.root"
+        },
+        {
+          "nevts": 29622,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/E4159E52-B3F6-694B-A57E-2E4863D4E0B4.root"
+        },
+        {
+          "nevts": 191062,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/0F132A87-24D2-BB4F-910D-1E9F97C0E6AA.root"
+        },
+        {
+          "nevts": 29352,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/6B1DFFF2-AFB3-D04A-9E86-585F1556829C.root"
+        },
+        {
+          "nevts": 6466,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/879430D3-4C25-2346-9082-9F4E4A1019DE.root"
+        },
+        {
+          "nevts": 29799,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/9E915310-D0B5-2642-BEA1-F3003701FA28.root"
+        },
+        {
+          "nevts": 72213,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/AF6CAD19-8D78-D143-9CE1-C3F306E71C7F.root"
+        },
+        {
+          "nevts": 37598,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/BC1A4B87-1EA1-0347-9C73-D7D8767B7956.root"
+        },
+        {
+          "nevts": 32326,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/CA9135C7-5412-FB4F-A569-D415772E682D.root"
+        },
+        {
+          "nevts": 9330,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/E0FB1682-E23A-E74B-826A-00F150FCFA16.root"
+        },
+        {
+          "nevts": 23222,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M900_W9_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2500000/F59DE93B-E3A8-D24F-9E2A-0D29BFED073D.root"
+        }
+      ],
+      "nevts_total": 461916
+    }
+  },
+  "zprimett9000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 7918,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1176C273-1CF6-6B40-AFAB-8CDB1D7FEBE5.root"
+        },
+        {
+          "nevts": 6000,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1F9B4E02-FDF4-FC40-A64E-7B8A277CDE2E.root"
+        },
+        {
+          "nevts": 5812,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/2498EFEC-541C-2644-9E2A-735B84DE3F0B.root"
+        },
+        {
+          "nevts": 17864,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/3B0E3AF5-9942-6144-895A-A5326969ABF4.root"
+        },
+        {
+          "nevts": 33735,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/558EAA0F-59C4-C94B-9F62-F9A180823419.root"
+        },
+        {
+          "nevts": 3956,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/8B682F7D-CB54-D84E-8602-1AE7CD4014C1.root"
+        },
+        {
+          "nevts": 3945,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/8D3BAA83-56D1-DB44-94F2-1EA885826B10.root"
+        },
+        {
+          "nevts": 11914,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M9000_W90_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/B0C53E66-917E-8A40-9EE9-2A5E5F681B3F.root"
+        }
+      ],
+      "nevts_total": 91144
+    }
+  }
 }

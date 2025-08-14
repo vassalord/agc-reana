@@ -1,0 +1,41 @@
+{
+  "zprimett3500": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 43458,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/120000/47633CA9-7E5F-394E-A23B-85550A6E349C.root"
+        },
+        {
+          "nevts": 37725,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/48D715E8-BB56-584E-886E-B23DEE5C4AFD.root"
+        },
+        {
+          "nevts": 108762,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/130000/B2C2D423-BD29-3347-9B4C-A405DF34D9A0.root"
+        },
+        {
+          "nevts": 5607,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/270000/80AAE311-8FA3-5047-AFB9-D58F2BE9FD55.root"
+        },
+        {
+          "nevts": 13136,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/DDD5A6E1-C2C3-6345-B662-754036304D1D.root"
+        },
+        {
+          "nevts": 52977,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/280000/E4A320B3-5BCB-8C46-A8E6-926587D858F1.root"
+        },
+        {
+          "nevts": 11335,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/0F7B0C8C-C64D-2C44-8940-A0C8ADDE4F95.root"
+        },
+        {
+          "nevts": 153819,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTT_M3500_W35_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/70000/29DEB61A-D9BD-C64F-BBA8-C0E6DF70CF5F.root"
+        }
+      ],
+      "nevts_total": 426819
+    }
+  }
+}

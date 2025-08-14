@@ -47,6 +47,9 @@ def get_items(json_file):
     
     return samples 
 
+ITEMS = get_items("nanoaod_inputs.json")
+EVERYTHING_MERGED_ROOTS = [f"everything_merged_{sample}__{condition}.root" for (sample, condition) in ITEMS]    
+
 rule all:
     input:
         "histograms_merged.root",
@@ -91,33 +94,13 @@ rule merging_histograms:
     resources:
         kubernetes_memory_limit="1850Mi"
     input:
-        "everything_merged_ttbar__nominal.root",
-        "everything_merged_ttbar__ME_var.root",
-        "everything_merged_ttbar__PS_var.root",
-        "everything_merged_ttbar__scaleup.root",
-        "everything_merged_ttbar__scaledown.root",
-        "everything_merged_single_top_s_chan__nominal.root",
-        "everything_merged_single_top_t_chan__nominal.root",
-        "everything_merged_single_top_tW__nominal.root",
-        "everything_merged_wjets__nominal.root",
-        "everything_merged_zprimett__nominal.root",
+        EVERYTHING_MERGED_ROOTS,
         "final_merging.ipynb"
     output:
         "histograms_merged.root"
     shell:
         "/bin/bash -l && source fix-env.sh && papermill final_merging.ipynb result_notebook.ipynb -k python3"
         
-rule export_png:
-    container:
-        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
-    input:
-        notebook="sample_{sample}__{condition}_out.ipynb",
-        png="png_outputs/{sample}__{condition}.png"
-    output:
-        png="png_outputs/{sample}__{condition}.png"
-    shell:
-        "echo 'PNG already saved in notebook'"
-
 rule final_stack_histogram:
     container:
         "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"

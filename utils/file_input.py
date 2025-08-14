@@ -46,7 +46,25 @@ def construct_fileset(n_files_max_per_sample, use_xcache=False, af_name="", loca
         "single_top_t_chan": (36.993 + 22.175)/0.252,  # scale from lepton filter to inclusive
         "single_top_tW": 37.936 + 37.906,
         "wjets": 61457 * 0.252,  # e/mu+nu final states
-        "zprimett": 0.3133,  # cross section after matching in pb
+        "zprimett1000": 31.33,
+        "zprimett1200": 31.33,
+        "zprimett2000": 31.33,
+        "zprimett2500": 31.33,
+        "zprimett3000": 31.33,
+        "zprimett3500": 31.33,
+        "zprimett400": 31.33,
+        "zprimett4000": 31.33,
+        "zprimett4500": 31.33,
+        "zprimett500": 31.33,
+        "zprimett5000": 31.33,
+        "zprimett600": 31.33,
+        "zprimett6000": 31.33,
+        "zprimett700": 31.33,
+        "zprimett7000": 31.33,
+        "zprimett800": 31.33,
+        "zprimett8000": 31.33,
+        "zprimett900": 31.33,
+        "zprimett9000": 31.33,  # cross section after matching in pb
         "data": None
     }
 

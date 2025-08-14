@@ -1,0 +1,33 @@
+{
+  "zprimett8000": {
+    "nominal": {
+      "files": [
+        {
+          "nevts": 4026,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2430000/1DFCEB0F-DAD7-6E41-902E-490F5E586B77.root"
+        },
+        {
+          "nevts": 7968,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/6DEADE1D-2F3A-E84A-B55D-5B4426A0E7A4.root"
+        },
+        {
+          "nevts": 19738,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/2520000/7C710C38-C02A-9245-A742-0195EED7C877.root"
+        },
+        {
+          "nevts": 37617,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/25310000/90C90065-3DB1-8249-BE4F-D9F562FF1697.root"
+        },
+        {
+          "nevts": 5902,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/A02628E7-569D-B245-9108-BCAC922C28A1.root"
+        },
+        {
+          "nevts": 15976,
+          "path": "root://eospublic.cern.ch//eos/opendata/cms/mc/RunIISummer20UL16NanoAODv9/ZprimeToTTJets_M8000_W80_TuneCP2_13TeV-madgraphMLM-pythia8/NANOAODSIM/106X_mcRun2_asymptotic_v17-v1/50000/F7BFCFB9-53E8-0347-B2AA-ADC7441E3364.root"
+        }
+      ],
+      "nevts_total": 91227
+    }
+  }
+}
