@@ -1,0 +1,2 @@
+[console_scripts]
+cabinetry = cabinetry.cli:cabinetry

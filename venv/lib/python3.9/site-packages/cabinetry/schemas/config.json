@@ -1,0 +1,426 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/scikit-hep/cabinetry/master/src/cabinetry/schemas/config.json",
+    "title": "cabinetry config schema",
+    "description": "full schema for the cabinetry configuration file",
+    "type": "object",
+    "required": ["General", "Regions", "Samples", "NormFactors"],
+    "properties": {
+        "General": {
+            "title": "General",
+            "description": "general settings",
+            "$ref": "#/definitions/general"
+        },
+        "Regions": {
+            "title": "Regions",
+            "description": "list of regions",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "description": "a region",
+                "$ref": "#/definitions/region"
+            },
+            "uniqueItems": true
+        },
+        "Samples": {
+            "title": "Samples",
+            "description": "list of samples",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "description": "a sample",
+                "$ref": "#/definitions/sample"
+            },
+            "uniqueItems": true
+        },
+        "NormFactors": {
+            "title": "NormFactors",
+            "description": "list of normalization factors",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "description": "a normalization factor",
+                "$ref": "#/definitions/normfactor"
+            },
+            "uniqueItems": true
+        },
+        "Systematics": {
+            "title": "Systematics",
+            "description": "list of systematics",
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "description": "a systematic uncertainty",
+                "$ref": "#/definitions/systematic"
+            },
+            "uniqueItems": true
+        }
+    },
+    "definitions": {
+        "general": {
+            "title": "General settings",
+            "$$target": "#/definitions/general",
+            "description": "general settings",
+            "type": "object",
+            "required": ["Measurement", "InputPath", "HistogramFolder"],
+            "properties": {
+                "Measurement": {
+                    "description": "name of measurement",
+                    "type": "string"
+                },
+                "POI": {
+                    "description": "name of parameter of interest, defaults to empty string",
+                    "type": "string"
+                },
+                "InputPath": {
+                    "description": "path to input files",
+                    "type": "string"
+                },
+                "HistogramFolder": {
+                    "description": "folder to save histograms to and read histograms from",
+                    "type": "string"
+                },
+                "Fixed": {
+                    "description": "list of parameters to treat as constant in fits",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "description": "a fixed parameter",
+                        "type": "object",
+                        "required": ["Name", "Value"],
+                        "properties": {
+                            "Name": {
+                                "description": "name of fixed parameter",
+                                "type": "string"
+                            },
+                            "Value": {
+                                "description": "value to fix parameter to",
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "uniqueItems": true
+                },
+                "VariationPath": {
+                    "description": "(part of) path to file containing variation (for histogram inputs), defaults to empty string",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "region": {
+            "title": "Region",
+            "$$target": "#/definitions/region",
+            "description": "a region of phase space",
+            "$$description": [
+                "required: Name + Variable + Binning (for ntuple inputs),",
+                "Name (for histogram inputs)"
+            ],
+            "type": "object",
+            "anyOf": [
+                {
+                    "required": ["Name", "Variable", "Binning"]
+                },
+                {
+                    "required": ["Name"]
+                }
+            ],
+            "properties": {
+                "Name": {
+                    "description": "name of the region",
+                    "type": "string"
+                },
+                "Variable": {
+                    "description": "variable to bin in",
+                    "type": "string"
+                },
+                "Binning": {
+                    "description": "binning to use in histograms",
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                        "description": "bins",
+                        "type": "number"
+                    },
+                    "uniqueItems": true
+                },
+                "Filter": {
+                    "description": "selection criteria to apply",
+                    "type": "string"
+                },
+                "RegionPath": {
+                    "description": "(part of) path to file containing region",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "sample": {
+            "title": "Sample",
+            "$$target": "#/definitions/sample",
+            "description": "a sample of a specific process or data",
+            "$$description": [
+                "required: Name + Tree (for ntuple inputs),",
+                "Name (for histogram inputs)"
+            ],
+            "type": "object",
+            "anyOf": [
+                {
+                    "required": ["Name", "Tree"]
+                },
+                {
+                    "required": ["Name"]
+                }
+            ],
+            "properties": {
+                "Name": {
+                    "description": "name of the sample",
+                    "type": "string"
+                },
+                "Tree": {
+                    "description": "name of tree",
+                    "type": "string"
+                },
+                "Filter": {
+                    "description": "selection criteria to apply (override for region setting)",
+                    "type": "string"
+                },
+                "Weight": {
+                    "description": "weight to apply to events",
+                    "type": "string"
+                },
+                "SamplePath": {
+                    "description": "(part of) path(s) to input file(s)",
+                    "$ref": "#/definitions/samplepath_setting"
+                },
+                "Data": {
+                    "description": "if it is a data sample",
+                    "type": "boolean"
+                },
+                "DisableStaterror": {
+                    "description": "whether to disable the automatic inclusion of staterror modifiers for this sample, defaults to False",
+                    "type": "boolean"
+                },
+                "Regions": {
+                    "description": "region(s) that contain the sample, defaults to all regions",
+                    "$ref": "#/definitions/regions_setting"
+                }
+            },
+            "additionalProperties": false
+        },
+        "normfactor": {
+            "title": "NormFactor",
+            "$$target": "#/definitions/normfactor",
+            "description": "a normalization factor affecting one or more samples",
+            "type": "object",
+            "required": ["Name"],
+            "properties": {
+                "Name": {
+                    "description": "name of the normalization factor",
+                    "type": "string"
+                },
+                "Regions": {
+                    "description": "region(s) that contain the normfactor, defaults to all regions",
+                    "$ref": "#/definitions/regions_setting"
+                },
+                "Samples": {
+                    "description": "affected sample(s), defaults to all samples",
+                    "$ref": "#/definitions/samples_setting"
+                },
+                "Nominal": {
+                    "description": "nominal value",
+                    "type": "number"
+                },
+                "Bounds": {
+                    "description": "lower and upper bound",
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                        "description": "bounds",
+                        "type": "number"
+                    },
+                    "uniqueItems": true
+                }
+            },
+            "additionalProperties": false
+        },
+        "systematic": {
+            "title": "Systematic",
+            "$$target": "#/definitions/systematic",
+            "description": "a systematic uncertainty",
+            "type": "object",
+            "required": ["Name", "Type", "Up", "Down"],
+            "properties": {
+                "Name": {
+                    "description": "name of the systematic uncertainty",
+                    "type": "string"
+                },
+                "Type": {
+                    "description": "type of systematic uncertainty",
+                    "type": "string",
+                    "enum": ["Normalization", "NormPlusShape"]
+                },
+                "Up": {
+                    "description": "template for \"up\" variation",
+                    "$ref": "#/definitions/template_setting"
+                },
+                "Down": {
+                    "description": "template for \"down\" variation",
+                    "$ref": "#/definitions/template_setting"
+                },
+                "Regions": {
+                    "description": "region(s) that contain the systematic, defaults to all regions",
+                    "$ref": "#/definitions/regions_setting"
+                },
+                "Samples": {
+                    "description": "affected sample(s), defaults to all samples",
+                    "$ref": "#/definitions/samples_setting"
+                },
+                "Smoothing": {
+                    "description": "smoothing to apply",
+                    "$ref": "#/definitions/smoothing_setting"
+                },
+                "ModifierName": {
+                    "description": "name of modifier in workspace, defaults to value set by Name",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "template_setting": {
+            "title": "Template",
+            "$$target": "#/definitions/template_setting",
+            "description": "a systematic template (up/down)",
+            "type": "object",
+            "properties": {
+                "Tree": {
+                    "description": "name of tree (override for nominal setting)",
+                    "type": "string"
+                },
+                "Weight": {
+                    "description": "weight to apply (override for nominal setting)",
+                    "type": "string"
+                },
+                "Variable": {
+                    "description": "variable to bin in (override for nominal setting)",
+                    "type": "string"
+                },
+                "Filter": {
+                    "description": "selection criteria to apply (override for region / sample setting)",
+                    "type": "string"
+                },
+                "RegionPath": {
+                    "description": "(part of) path to file containing region (override for nominal setting)",
+                    "type": "string"
+                },
+                "SamplePath": {
+                    "description": "(part of) path(s) to input file(s) (override for nominal setting)",
+                    "$ref": "#/definitions/samplepath_setting"
+                },
+                "Normalization": {
+                    "description": "normalization uncertainty to apply",
+                    "type": "number"
+                },
+                "Symmetrize": {
+                    "description": "whether to apply symmetrization",
+                    "type": "boolean"
+                },
+                "VariationPath": {
+                    "description": "(part of) path to file containing variation (for histogram inputs, override for general setting)",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "samples_setting": {
+            "title": "Sample setting",
+            "$$target": "#/definitions/samples_setting",
+            "description": "name(s) of affected sample(s)",
+            "oneOf": [
+                {
+                    "description": "single affected sample",
+                    "type": "string"
+                },
+                {
+                    "description": "multiple affected samples",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "description": "single affected sample",
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                }
+            ]
+        },
+        "samplepath_setting": {
+            "title": "SamplePath setting",
+            "$$target": "#/definitions/samplepath_setting",
+            "description": "path(s) to input file(s) for histogram production",
+            "$$description": "a list of paths is only supported for ntuple inputs",
+            "oneOf": [
+                {
+                    "description": "path to single file",
+                    "type": "string"
+                },
+                {
+                    "description": "list of paths",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "description": "path to single file",
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                }
+            ]
+        },
+        "regions_setting": {
+            "title": "Regions setting",
+            "$$target": "#/definitions/regions_setting",
+            "description": "name(s) of region(s)",
+            "oneOf": [
+                {
+                    "description": "single region",
+                    "type": "string"
+                },
+                {
+                    "description": "list of regions",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "description": "single region",
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                }
+            ]
+        },
+        "smoothing_setting": {
+            "title": "Smoothing setting",
+            "$$target": "#/definitions/smoothing_setting",
+            "description": "smoothing settings for template histograms",
+            "type": "object",
+            "required": ["Algorithm"],
+            "properties": {
+                "Algorithm": {
+                    "description": "name of smoothing algorithm to use",
+                    "type": "string",
+                    "enum": ["353QH, twice"]
+                },
+                "Regions": {
+                    "description": "regions to apply smoothing in",
+                    "$ref": "#/definitions/regions_setting"
+                },
+                "Samples": {
+                    "description": "sample(s) to apply smoothing to, defaults to all samples",
+                    "$ref": "#/definitions/samples_setting"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

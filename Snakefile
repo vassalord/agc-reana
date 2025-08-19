@@ -1,4 +1,4 @@
-N_FILES_MAX_PER_SAMPLE = 1
+N_FILES_MAX_PER_SAMPLE = -1
 download_sleep = 0
 url_prefix = "root://eospublic.cern.ch//eos/opendata"
 #In order to run analysis from Nebraska use this prefix
