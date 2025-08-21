@@ -131,4 +131,4 @@ rule compute_limit:
         "results/limit_summary.txt",
         "workspace.json"
     shell:
-        "/bin/bash -l && source fix-env.sh && python3s cabinetry_fit_limit.py"
+        "/bin/bash -l && source fix-env.sh && python3 cabinetry_fit_limit.py"
