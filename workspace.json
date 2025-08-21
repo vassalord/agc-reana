@@ -64,11 +64,6 @@
                             "type": "staterror"
                         },
                         {
-                            "data": null,
-                            "name": "ttbar_norm",
-                            "type": "normfactor"
-                        },
-                        {
                             "data": {
                                 "hi": 1.2203535235426883,
                                 "lo": 0.7796464764573117
@@ -2953,11 +2948,6 @@
                             "type": "staterror"
                         },
                         {
-                            "data": null,
-                            "name": "ttbar_norm",
-                            "type": "normfactor"
-                        },
-                        {
                             "data": {
                                 "hi": 1.1292554045743322,
                                 "lo": 0.8707445954256678
@@ -5783,18 +5773,6 @@
         {
             "config": {
                 "parameters": [
-                    {
-                        "bounds": [
-                            [
-                                0,
-                                10
-                            ]
-                        ],
-                        "inits": [
-                            1.0
-                        ],
-                        "name": "ttbar_norm"
-                    },
                     {
                         "bounds": [
                             [

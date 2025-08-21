@@ -10,9 +10,12 @@ inputs:
     - final_merging.ipynb
     - prepare_workspace.py
     - plot_final_stack.py
+    - cabinetry_config.yml
+    - cabinetry_fit_limit.py
   directories:
     - histograms
     - utils
+    - results
 workflow:
   type: snakemake
   resources:
@@ -22,3 +25,8 @@ outputs:
   files:
     - histograms_merged.root
     - png_outputs/final_stack_histogram_4j1b.png
+    - png_outputs/stack_4j2b_nominal.png
+    - png_outputs/btagging_variations_4j1b_ttbar.png
+    - png_outputs/jet_energy_variations_4j2b_ttbar.png
+    - results/limits.json
+    - results/limit_summary.txt

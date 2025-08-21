@@ -56,7 +56,9 @@ rule all:
         "png_outputs/final_stack_histogram_4j1b.png",
         "png_outputs/stack_4j2b_nominal.png",
         "png_outputs/btagging_variations_4j1b_ttbar.png",
-        "png_outputs/jet_energy_variations_4j2b_ttbar.png"
+        "png_outputs/jet_energy_variations_4j2b_ttbar.png",
+        "results/limits.json",
+        "results/limit_summary.txt"
         
 
 rule process_sample_one_file_in_sample:
@@ -112,6 +114,21 @@ rule final_stack_histogram:
         "png_outputs/stack_4j2b_nominal.png",
         "png_outputs/btagging_variations_4j1b_ttbar.png",
         "png_outputs/jet_energy_variations_4j2b_ttbar.png"
-
     shell:
         "/bin/bash -l && source fix-env.sh && python plot_final_stack.py"
+
+rule compute_limit:
+    container:
+        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+    resources:
+        kubernetes_memory_limit="1850Mi"
+    input:
+        "histograms_merged.root",
+        "cabinetry_config.yml",
+        "cabinetry_fit_limit.py"
+    output:
+        "results/limits.json",
+        "results/limit_summary.txt",
+        "workspace.json"
+    shell:
+        "/bin/bash -l && source fix-env.sh && python3s cabinetry_fit_limit.py"

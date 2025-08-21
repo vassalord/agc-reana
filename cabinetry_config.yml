@@ -9,11 +9,11 @@ Regions:
   - Name: "4j1b CR"
     RegionPath: "4j1b"
     Variable: "$H_T$ [GeV]"
-    Binning: [50, 70, 90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310, 330, 350, 370, 390, 410, 430, 450, 470, 490, 510, 530, 550]
+    Binning: [110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310, 330, 350, 370, 390, 410, 430, 450, 470, 490, 510, 530, 550]
   - Name: "4j2b SR"
     RegionPath: "4j2b"
     Variable: "$m_{bjj}$ [GeV]"
-    Binning: [50, 70, 90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310, 330, 350, 370, 390, 410, 430, 450, 470, 490, 510, 530, 550]
+    Binning: [110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 310, 330, 350, 370, 390, 410, 430, 450, 470, 490, 510, 530, 550]
 
 Samples:
   - Name: "Pseudodata"
@@ -117,11 +117,7 @@ Systematics:
       Normalization: -0.03
 
 NormFactors:
-  - Name: "ttbar_norm"
-    Samples: "ttbar"
-    Nominal: 1.0
-    Bounds: [0, 10]
-
+ 
   - Name: "zprimett4000_norm"
     Samples: "zprimett4000"
     Nominal: 1.0
