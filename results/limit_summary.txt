@@ -1,3 +1,3 @@
-POI: zprimett4000_norm
-Observed 95% CL: 0.44493836603942444
-Expected (median) 95% CL: [0.33343152 0.44993837 0.62600218 0.87617674 1.18419139]
+POI: zprimett500_norm
+Observed 95% CL: 1.0675611241658938
+Expected (median) 95% CL: 0.8717374214349204

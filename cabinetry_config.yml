@@ -1,6 +1,6 @@
 General:
   Measurement: "CMS_ttbar"
-  POI: "zprimett4000_norm"
+  POI: "zprimett500_norm"
   HistogramFolder: "histograms"
   InputPath: "histograms_merged.root:{RegionPath}_{SamplePath}{VariationPath}"
   VariationPath: "_nominal"
@@ -35,8 +35,8 @@ Samples:
   - Name: "tW"
     SamplePath: "single_top_tW"
 
-  - Name: "zprimett4000"
-    SamplePath: "zprimett4000"
+  - Name: "zprimett500"
+    SamplePath: "zprimett500"
 
 Systematics:
   - Name: "ME variation"
@@ -118,7 +118,7 @@ Systematics:
 
 NormFactors:
  
-  - Name: "zprimett4000_norm"
-    Samples: "zprimett4000"
+  - Name: "zprimett500_norm"
+    Samples: "zprimett500"
     Nominal: 1.0
-    Bounds: [0, 50]
+    Bounds: [0, 100]
