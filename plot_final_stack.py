@@ -74,34 +74,34 @@ def plot_stack(hist_dict, channel, variation, out_file, xlabel, title):
     plt.close(fig)
 
 def plot_variations(hist_dict):
-    if "4j1b" in hist_dict and "ttbar" in hist_dict["4j1b"]:
-        base = hist_dict["4j1b"]["ttbar"].get("nominal")
+    if "4j1b" in hist_dict and "zprimett500" in hist_dict["4j1b"]:
+        base = hist_dict["4j1b"]["zprimett500"].get("nominal")
         if base:
             fig, ax = plt.subplots()
             base[120j::hist.rebin(2)].plot(label="nominal", linewidth=2, ax=ax)
             for i in range(4):
                 var = f"btag_var_{i}_up"
-                if var in hist_dict["4j1b"]["ttbar"]:
-                    hist_dict["4j1b"]["ttbar"][var][120j::hist.rebin(2)].plot(label=f"NP {i+1}", linewidth=2, ax=ax)
+                if var in hist_dict["4j1b"]["zprimett500"]:
+                    hist_dict["4j1b"]["zprimett500"][var][120j::hist.rebin(2)].plot(label=f"NP {i+1}", linewidth=2, ax=ax)
             ax.legend(frameon=False)
             ax.set_xlabel(r"$H_T$ [GeV]")
             ax.set_title("b-tagging variations")
             fig.tight_layout()
-            fig.savefig("png_outputs/btagging_variations_4j1b_ttbar.png", dpi=300)
+            fig.savefig("png_outputs/btagging_variations_4j1b_zprimett500.png", dpi=300)
             plt.close(fig)
 
-    if "4j2b" in hist_dict and "ttbar" in hist_dict["4j2b"]:
-        base = hist_dict["4j2b"]["ttbar"].get("nominal")
+    if "4j2b" in hist_dict and "zprimett500" in hist_dict["4j2b"]:
+        base = hist_dict["4j2b"]["zprimett500"].get("nominal")
         if base:
             fig, ax = plt.subplots()
             base.plot(label="nominal", linewidth=2, ax=ax)
-            hist_dict["4j2b"]["ttbar"].get("pt_scale_up", base).plot(label="scale up", linewidth=2, ax=ax)
-            hist_dict["4j2b"]["ttbar"].get("pt_res_up", base).plot(label="resolution up", linewidth=2, ax=ax)
+            hist_dict["4j2b"]["zprimett500"].get("pt_scale_up", base).plot(label="scale up", linewidth=2, ax=ax)
+            hist_dict["4j2b"]["zprimett500"].get("pt_res_up", base).plot(label="resolution up", linewidth=2, ax=ax)
             ax.legend(frameon=False)
             ax.set_xlabel(r"$m_{bjj}$ [GeV]")
             ax.set_title("Jet energy variations")
             fig.tight_layout()
-            fig.savefig("png_outputs/jet_energy_variations_4j2b_ttbar.png", dpi=300)
+            fig.savefig("png_outputs/jet_energy_variations_4j2b_zprimett500.png", dpi=300)
             plt.close(fig)
 
 if __name__ == "__main__":

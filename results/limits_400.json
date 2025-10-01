@@ -1,0 +1,15 @@
+{
+  "poi": "zprimett400_norm",
+  "observed_95": 1.7546213102985107,
+  "expected_median_95": 1.8822223452248108,
+  "expected_bands_95": [
+    0.9391815341485199,
+    1.3083445824829052,
+    1.8822223452248108,
+    2.663938766745638,
+    3.5797166211658507
+  ],
+  "AGC_rebinning_applied": true,
+  "note": "standard cabinetry.fit.limit",
+  "status": "OK"
+}

@@ -1,0 +1,6 @@
+POI: zprimett900_norm
+Observed 95% CL: 2.7608562706882416
+Expected (median) 95% CL: 1.8980900277805104
+AGC_rebinning_applied: True
+Note: standard cabinetry.fit.limit
+Status: OK

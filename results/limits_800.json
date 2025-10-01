@@ -1,0 +1,15 @@
+{
+  "poi": "zprimett800_norm",
+  "observed_95": 2.171005330045005,
+  "expected_median_95": 1.4172286910243255,
+  "expected_bands_95": [
+    0.7630629967161823,
+    1.0234317842375416,
+    1.4172286910243255,
+    1.969241829572298,
+    2.6359723875376346
+  ],
+  "AGC_rebinning_applied": true,
+  "note": "cabinetry.fit.limit with stronger rebin (merge 4->1)",
+  "status": "OK"
+}

@@ -1,4 +1,3 @@
-
 RECAST_DIR = "/eos/user/s/shoienko/REANA_file"
 GLOBAL_MERGED = f"{RECAST_DIR}/histograms_merged.root"
 # Local stamp so Snakemake never waits for EOS directly
