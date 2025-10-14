@@ -2,3 +2,9 @@ sample_*
 workspace*
 *.root
 *.png
+venv
+limit_*
+limits_*
+*.npz
+combine_plots
+zprimett_masses_*

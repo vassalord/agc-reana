@@ -184,19 +184,19 @@ rule final_stack_histogram:
     shell:
         "/bin/bash -l && source fix-env.sh && python plot_final_stack.py"
 
-rule compute_limit:
-    """Run limit extraction using cabinetry on the local merged ROOT."""
-    container:
-        "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
-    resources:
-        kubernetes_memory_limit="1850Mi"
-    input:
-        "histograms_merged.root",
-        "cabinetry_config.yml",
-        "cabinetry_fit_limit.py"
-    output:
-        "results/limits.json",
-        "results/limit_summary.txt",
-        "workspace.json"
-    shell:
-        "/bin/bash -l && source fix-env.sh && python3 cabinetry_fit_limit.py"
+# rule compute_limit:
+#     """Run limit extraction using cabinetry on the local merged ROOT."""
+#     container:
+#         "reanahub/reana-demo-agc-cms-ttbar-coffea:1.0.0"
+#     resources:
+#         kubernetes_memory_limit="1850Mi"
+#     input:
+#         "histograms_merged.root",
+#         "cabinetry_config.yml",
+#         "cabinetry_fit_limit.py"
+#     output:
+#         "results/limits.json",
+#         "results/limit_summary.txt",
+#         "workspace.json"
+#     shell:
+#         "/bin/bash -l && source fix-env.sh && python3 cabinetry_fit_limit.py"

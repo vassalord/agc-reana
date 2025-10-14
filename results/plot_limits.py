@@ -51,7 +51,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--summaries_glob", default="limit_summary_*.txt")
     ap.add_argument("--search_json_dirs", default=".,results")
-    ap.add_argument("--xlabel", default=r"$m_{HNL}$ [GeV]")
+    ap.add_argument("--xlabel", default=r"$m_{Z'}$ [GeV]")
     ap.add_argument("--ylabel", default=r"95% CL upper limit on $\mu$")
     ap.add_argument("--out", default="limits_summary.png")
     ap.add_argument("--title", default="")

@@ -1,0 +1,47 @@
+imax 2
+jmax *
+kmax *
+--------------------------------------------------------------------------------------------------------------------------------
+# observation from shapes (pseudodata)
+shapes data_obs bin4j1b histograms_merged.root 4j1b_pseudodata_nominal
+shapes data_obs bin4j2b histograms_merged.root 4j2b_pseudodata_nominal
+
+# generic mapping: nominal and $SYSTEMATIC{Up,Down}
+# (для 'shapeU' Combine візьме лише *_Up, а *_Down згенерує дзеркально)
+shapes *       bin4j1b histograms_merged.root 4j1b_$PROCESS_nominal 4j1b_$PROCESS_$SYSTEMATIC
+shapes *       bin4j2b histograms_merged.root 4j2b_$PROCESS_nominal 4j2b_$PROCESS_$SYSTEMATIC
+--------------------------------------------------------------------------------------------------------------------------------
+
+bin          bin4j1b      bin4j2b
+observation  -1           -1
+--------------------------------------------------------------------------------------------------------------------------------
+# --- only zprimett 400–1200 kept ---
+bin      bin4j1b      bin4j1b      bin4j1b      bin4j1b      bin4j1b      bin4j1b      bin4j1b      bin4j1b      bin4j1b            bin4j1b            bin4j1b            bin4j1b      bin4j1b      bin4j2b      bin4j2b      bin4j2b      bin4j2b      bin4j2b      bin4j2b      bin4j2b      bin4j2b      bin4j2b            bin4j2b            bin4j2b            bin4j2b      bin4j2b
+process  zprimett400  zprimett500  zprimett600  zprimett700  zprimett800  zprimett900  zprimett1000 zprimett1200 ttbar              single_top_s_chan single_top_t_chan single_top_tW wjets       zprimett400  zprimett500  zprimett600  zprimett700  zprimett800  zprimett900  zprimett1000 zprimett1200 ttbar              single_top_s_chan single_top_t_chan single_top_tW wjets
+process  0            -1           -2           -3           -4           -5           -6           -7           1                 2                  3                  4            5           0            -1           -2           -3           -4           -5           -6           -7           1                 2                  3                  4            5
+rate     -1           -1           -1           -1           -1           -1           -1           -1           -1                -1                 -1                 -1           -1          -1           -1           -1           -1           -1           -1           -1           -1           -1                -1                 -1                 -1           -1
+--------------------------------------------------------------------------------------------------------------------------------
+# Jet-related (mirrored Down from Up)
+pt_scale   shape  1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+pt_res     shape  1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+
+# b-tagging (apply to all)
+btag_var_0 shape   1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+btag_var_1 shape   1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+btag_var_2 shape   1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+btag_var_3 shape   1 1 1 1 1 1 1 1   1 1 1 1 1    1 1 1 1 1 1 1 1   1 1 1 1 1
+
+# ttbar modeling (only ttbar columns -> put 1 in the ttbar slot, 0 elsewhere)
+ME_var     shape   0 0 0 0 0 0 0 0   1 0 0 0 0    0 0 0 0 0 0 0 0   1 0 0 0 0
+PS_var     shape   0 0 0 0 0 0 0 0   1 0 0 0 0    0 0 0 0 0 0 0 0   1 0 0 0 0
+scale      shape   0 0 0 0 0 0 0 0   1 0 0 0 0    0 0 0 0 0 0 0 0   1 0 0 0 0
+
+# W+jets specific (only wjets columns -> 1 there)
+scale_var  shape   0 0 0 0 0 0 0 0   0 0 0 0 1    0 0 0 0 0 0 0 0   0 0 0 0 1
+
+# luminosity (applies to all)
+lumi       lnN     1.03 1.03 1.03 1.03 1.03 1.03 1.03 1.03   1.03 1.03 1.03 1.03 1.03    1.03 1.03 1.03 1.03 1.03 1.03 1.03 1.03   1.03 1.03 1.03 1.03 1.03
+
+# MC stat per bin
+bin4j1b autoMCStats 0
+bin4j2b autoMCStats 0
