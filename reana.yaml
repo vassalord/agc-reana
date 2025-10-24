@@ -10,12 +10,14 @@ inputs:
     - final_merging.ipynb
     - prepare_workspace.py
     - plot_final_stack.py
-    - cabinetry_config.yml
-    - cabinetry_fit_limit.py
+    - datacard_by_hand.txt
+    - make_mirrored_down.py
+    - statistical_inference.py
   directories:
     - histograms
     - utils
     - results
+    - combine_scripts
 workflow:
   type: snakemake
   resources:
@@ -27,6 +29,35 @@ outputs:
     - png_outputs/final_stack_histogram_4j1b.png
     - png_outputs/stack_4j2b_nominal.png
     - png_outputs/btagging_variations_4j1b_ttbar.png
-    - png_outputs/jet_energy_variations_4j2b_ttbar.png
-    - results/limits.json
-    - results/limit_summary.txt
+    - png_outputs/jet_energy_variations_4j2b_ttbar.png  
+    - datacard_by_hand.root   
+    - combine_plots/impacts_r400.pdf
+    - combine_plots/impacts_r500.pdf
+    - combine_plots/impacts_r600.pdf
+    - combine_plots/impacts_r700.pdf
+    - combine_plots/impacts_r800.pdf
+    - combine_plots/impacts_r900.pdf
+    - combine_plots/impacts_r1000.pdf
+    - combine_plots/impacts_r1200.pdf
+    - combine_plots/stacked_plot_shapes_fit_b_bin4j1b_m400.png
+    - combine_plots/stacked_plot_shapes_fit_b_bin4j2b_m400.png
+    - combine_plots/stacked_plot_shapes_prefit_bin4j1b_m400.png
+    - combine_plots/stacked_plot_shapes_prefit_bin4j2b_m400.png
+    - combine_plots/stacked_plot_shapes_fit_s_bin4j1b_m400.png
+    - combine_plots/stacked_plot_shapes_fit_s_bin4j2b_m400.png
+    - combine_limits/limit_summary_400.txt
+    - combine_limits/limits_zprimett400.json
+    - combine_limits/limit_summary_500.txt
+    - combine_limits/limits_zprimett500.json
+    - combine_limits/limit_summary_600.txt
+    - combine_limits/limits_zprimett600.json
+    - combine_limits/limit_summary_700.txt
+    - combine_limits/limits_zprimett700.json
+    - combine_limits/limit_summary_800.txt
+    - combine_limits/limits_zprimett800.json
+    - combine_limits/limit_summary_900.txt
+    - combine_limits/limits_zprimett900.json
+    - combine_limits/limit_summary_1000.txt
+    - combine_limits/limits_zprimett1000.json
+    - combine_limits/limit_summary_1200.txt
+    - combine_limits/limits_zprimett1200.json

@@ -2,12 +2,12 @@ imax 2
 jmax *
 kmax *
 --------------------------------------------------------------------------------------------------------------------------------
-# observation from shapes (pseudodata)
+
 shapes data_obs bin4j1b histograms_merged.root 4j1b_pseudodata_nominal
 shapes data_obs bin4j2b histograms_merged.root 4j2b_pseudodata_nominal
 
 # generic mapping: nominal and $SYSTEMATIC{Up,Down}
-# (для 'shapeU' Combine візьме лише *_Up, а *_Down згенерує дзеркально)
+
 shapes *       bin4j1b histograms_merged.root 4j1b_$PROCESS_nominal 4j1b_$PROCESS_$SYSTEMATIC
 shapes *       bin4j2b histograms_merged.root 4j2b_$PROCESS_nominal 4j2b_$PROCESS_$SYSTEMATIC
 --------------------------------------------------------------------------------------------------------------------------------
