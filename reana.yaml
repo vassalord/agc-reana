@@ -9,6 +9,8 @@ inputs:
     - file_merging.ipynb
     - final_merging.ipynb
     - prepare_workspace.py
+    - cabinetry_config.yml
+    - cabinetry_fit_limit.py
     - plot_final_stack.py
     - datacard_by_hand.txt
     - make_mirrored_down.py
@@ -23,13 +25,18 @@ workflow:
   resources:
     kerberos: true
   file: Snakefile
+  parameters:
+    recast:
+      dir: /eos/user/s/shoienko/REANA_file
 outputs:
   files:
     - histograms_merged.root
     - png_outputs/final_stack_histogram_4j1b.png
     - png_outputs/stack_4j2b_nominal.png
     - png_outputs/btagging_variations_4j1b_ttbar.png
-    - png_outputs/jet_energy_variations_4j2b_ttbar.png  
+    - png_outputs/jet_energy_variations_4j2b_ttbar.png
+    - results/limits.json
+    - results/limit_summary.txt  
     - datacard_by_hand.root   
     - combine_plots/impacts_r400.pdf
     - combine_plots/impacts_r500.pdf

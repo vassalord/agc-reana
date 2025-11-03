@@ -1,6 +1,6 @@
 General:
   Measurement: "CMS_ttbar"
-  POI: "zprimett400_norm"
+  POI: "zprimett600_norm"
   HistogramFolder: "histograms"
   InputPath: "histograms_merged.root:{RegionPath}_{SamplePath}{VariationPath}"
   VariationPath: "_nominal"
@@ -35,11 +35,10 @@ Samples:
   - Name: "tW"
     SamplePath: "single_top_tW"
 
-  - Name: "zprimett400"
-    SamplePath: "zprimett400"
+  - Name: "zprimett600"
+    SamplePath: "zprimett600"
 
 Systematics:
- 
   - Name: "ME variation"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_ME_var" }
@@ -52,52 +51,48 @@ Systematics:
     Down: { Symmetrize: True }
     Samples: "ttbar"
 
- 
   - Name: "ttbar scale variations"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_scaleup" }
     Down: { VariationPath: "_scaledown" }
     Samples: "ttbar"
 
- 
   - Name: "Jet energy scale"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_pt_scale_up" }
     Down: { Symmetrize: True }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
   - Name: "Jet energy resolution"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_pt_res_up" }
     Down: { Symmetrize: True }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
-  
   - Name: "b-tag NP 1"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_btag_var_0_up" }
     Down: { VariationPath: "_btag_var_0_down" }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
   - Name: "b-tag NP 2"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_btag_var_1_up" }
     Down: { VariationPath: "_btag_var_1_down" }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
   - Name: "b-tag NP 3"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_btag_var_2_up" }
     Down: { VariationPath: "_btag_var_2_down" }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
   - Name: "b-tag NP 4"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_btag_var_3_up" }
     Down: { VariationPath: "_btag_var_3_down" }
-    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett400"]
+    Samples: ["ttbar", "W+jets", "single_top_s_chan", "single_top_t_chan", "single_top_tW", "zprimett600"]
 
-  
   - Name: "W+jets scale variations"
     Type: "NormPlusShape"
     Up:   { VariationPath: "_scale_var_up" }
@@ -110,7 +105,7 @@ Systematics:
     Down: { Normalization: -0.03 }
 
 NormFactors:
-  - Name: "zprimett400_norm"
-    Samples: "zprimett400"
+  - Name: "zprimett600_norm"
+    Samples: "zprimett600"
     Nominal: 1.0
-    Bounds: [0, 100]
+    Bounds: [-100, 100]

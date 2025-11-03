@@ -1,15 +1,15 @@
 {
-  "poi": "zprimett1200_norm",
-  "observed_95": 3.5962133953567332,
-  "expected_median_95": 4.843457223973941,
+  "poi": "zprimett400_norm",
+  "observed_95": 2.147694845203476,
+  "expected_median_95": 2.7384900925930324,
   "expected_bands_95": [
-    2.6368653072432537,
-    3.5188763220886177,
-    4.843457223973941,
-    6.665346215147581,
-    8.81218163941257
+    1.4525180515511902,
+    1.9579353854882438,
+    2.7384900925930324,
+    3.8776616683576597,
+    5.360971787695893
   ],
   "AGC_rebinning_applied": true,
-  "note": "standard cabinetry.fit.limit",
+  "note": "cabinetry.fit.limit with stronger rebin (merge 4->1)",
   "status": "OK"
 }

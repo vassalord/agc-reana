@@ -5,7 +5,7 @@ import subprocess
 from pathlib import Path
 
 # MASSES = [400, 500, 600, 700, 800, 900, 1000, 1200]
-MASSES = [400]
+MASSES = [600]
 
 def run(cmd, check=True):
     print(f"\n$ {cmd}")
@@ -65,7 +65,6 @@ def main():
         onepoi = f"--redefineSignalPOIs {poi}"
         freeze = freeze_other_pois(m)
 
-        # Fits + постфіт-плоти
         run(f"combine -M FitDiagnostics datacard_by_hand.root {onepoi}{freeze} "
             f"-n _{tag} --saveShapes -m 125 --cminDefaultMinimizerStrategy 0", check=True)
 
@@ -90,7 +89,6 @@ def main():
             out_json = f"combine_limits/limits_zprimett{m}.json"
             run(f"combineTool.py -M CollectLimits {al_root} -o {out_json}", check=True)
 
-           
             out_txt = f"combine_limits/limit_summary_{m}.txt"
             write_text_summary(out_json, m, out_txt)
 
@@ -98,7 +96,7 @@ def main():
         run(f"combine -M MultiDimFit datacard_by_hand.root {onepoi}{freeze} "
             f"-n .{tag}.snapshot --rMin 0 --rMax 2 --saveWorkspace -m 125")
         run(f"combine -M MultiDimFit higgsCombine.{tag}.snapshot.MultiDimFit.mH125.root "
-            f"-n .{tag} --rMin 0 --rMax 2 --algo grid --points 80 --snapshotName MultiDimFit -m 125")
+            f"-n .{tag} --rMin 0 --rMax 2 --algo grid --points 120 --snapshotName MultiDimFit -m 125")
         run(f"combine -M MultiDimFit higgsCombine.{tag}.snapshot.MultiDimFit.mH125.root "
             f"-n .{tag}.freezeAll --rMin 0 --rMax 2 --algo grid --points 800 "
             f"--snapshotName MultiDimFit --freezeParameters allConstrainedNuisances -m 125")

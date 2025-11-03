@@ -1,3 +1,5 @@
+# All comments in English.
+
 import uproot
 import hist
 import matplotlib.pyplot as plt
@@ -6,9 +8,9 @@ import numpy as np
 import re
 import utils.plotting
 
-
 utils.plotting.set_style()
 os.makedirs("png_outputs", exist_ok=True)
+
 
 FILENAME = "histograms_merged.root"
 CHANNELS = ["4j1b", "4j2b"]
@@ -20,9 +22,12 @@ PROCESS_ORDER = [
     "single_top_s_chan",
     "wjets",
     "ttbar",
-    "zprimett500",  # example signal just for the variation plots below
+    "zprimett500", 
+    "zprimett600", 
+    "zprimett700", 
+    "zprimett800", 
+    "zprimett900"
 ]
-
 
 def normalize_variation(v: str) -> str:
     """Normalize variation name:
@@ -39,38 +44,27 @@ def normalize_variation(v: str) -> str:
         return v[:-4] + "_down"
     return v
 
-
 def parse_key(key: str):
-    
+    """Parse 'channel_process[_variation]' with robust process detection."""
     if "_" not in key:
         return None
     channel, rest = key.split("_", 1)
 
-    # Try to match a known process (longest first)
-    candidates = sorted(PROCESS_ORDER, key=len, reverse=True)
-    proc = None
-    var = None
-    for p in candidates:
-        if rest == p:
-            proc = p
-            var = "nominal"
-            break
-        prefix = p + "_"
-        if rest.startswith(prefix):
-            proc = p
-            var = rest[len(prefix):]
-            break
+    # Try to split at the last '_' to separate process and variation if possible
+    # but also handle exact '..._nominal'
+    if rest.endswith("_nominal"):
+        proc = rest[: -len("_nominal")]
+        var = "nominal"
+        return channel, proc, var
 
-    if proc is None:
-        # Fallback: assume last '_' separates process and variation
-        if "_" not in rest:
-            return None
-        proc, var = rest.rsplit("_", 1)
+    # If we have something like 'ttbar_scaleUp' or 'btag_var_0_up'
+    m = re.match(r"(.+?)_(.+)$", rest)
+    if m:
+        proc, var = m.group(1), m.group(2)
+        return channel, proc, normalize_variation(var)
 
-    var = normalize_variation(var)
-    return channel, proc, var
-
-
+    # Fallback: treat whole rest as process (nominal)
+    return channel, rest, "nominal"
 
 def load_all_histograms(filename: str):
     """Read all TH1 from a ROOT file and organize them by (channel, process, variation)."""
@@ -81,7 +75,6 @@ def load_all_histograms(filename: str):
         key = key_with_version.split(";")[0]
         parsed = parse_key(key)
         if not parsed:
-            # Key not matching the expected scheme
             continue
 
         channel, proc, variation = parsed
@@ -89,22 +82,17 @@ def load_all_histograms(filename: str):
         try:
             values, edges = file[key_with_version].to_numpy()
         except Exception:
-            
             continue
 
-        
         h = hist.Hist.new.Var(edges, name="x").Double()
-        
         h.view(flow=False)[...] = values
 
         histograms.setdefault(channel, {}).setdefault(proc, {})[variation] = h
 
     return histograms
 
-
-
 def plot_stack(hist_dict, channel: str, variation: str, out_file: str, xlabel: str, title: str):
-    """Make a stacked plot of the processes in PROCESS_ORDER for one channel & variation."""
+    """Make a stacked plot of the backgrounds in PROCESS_ORDER for one channel & variation."""
     from hist.stack import Stack
 
     proc_hists = []
@@ -112,7 +100,7 @@ def plot_stack(hist_dict, channel: str, variation: str, out_file: str, xlabel: s
 
     for proc in PROCESS_ORDER:
         if proc in hist_dict and variation in hist_dict[proc]:
-            # Light rebin example: by a factor of 2 (adjust/remove as needed)
+            # light rebin example (adjust or remove as needed)
             h = hist_dict[proc][variation][::hist.rebin(2)]
             proc_hists.append(h)
             labels.append(proc)
@@ -132,47 +120,47 @@ def plot_stack(hist_dict, channel: str, variation: str, out_file: str, xlabel: s
     fig.savefig(out_file, dpi=300)
     plt.close(fig)
 
-
 def plot_variations(hist_dict):
-    
-    if "4j1b" in hist_dict and "zprimett500" in hist_dict["4j1b"]:
-        base = hist_dict["4j1b"]["zprimett500"].get("nominal")
-        if base is not None:
-            fig, ax = plt.subplots()
-            # Example: slice/rebin on x-axis (120j is a complex step; keep as in the original code)
-            base[120j::hist.rebin(2)].plot(label="nominal", linewidth=2, ax=ax)
-            for i in range(4):
-                var = f"btag_var_{i}_up"
-                if var in hist_dict["4j1b"]["zprimett500"]:
-                    hist_dict["4j1b"]["zprimett500"][var][120j::hist.rebin(2)].plot(
-                        label=f"NP {i+1}", linewidth=2, ax=ax
-                    )
-            ax.legend(frameon=False)
-            ax.set_xlabel(r"$H_T$ [GeV]")
-            ax.set_title("b-tagging variations (4j1b, zprimett500)")
-            fig.tight_layout()
-            fig.savefig("png_outputs/btagging_variations_4j1b_zprimett500.png", dpi=300)
-            plt.close(fig)
+    """Example variation overlays for a single signal mass if present."""
+    # pick any existing z' signal in 4j1b for b-tag variations
+    for mass in ["zprimett500", "zprimett600", "zprimett700", "zprimett800", "zprimett900"]:
+        if "4j1b" in hist_dict and mass in hist_dict["4j1b"]:
+            base = hist_dict["4j1b"][mass].get("nominal")
+            if base is not None:
+                fig, ax = plt.subplots()
+                base[120j::hist.rebin(2)].plot(label="nominal", linewidth=2, ax=ax)
+                for i in range(4):
+                    var = f"btag_var_{i}_up"
+                    if var in hist_dict["4j1b"][mass]:
+                        hist_dict["4j1b"][mass][var][120j::hist.rebin(2)].plot(
+                            label=f"NP {i+1}", linewidth=2, ax=ax
+                        )
+                ax.legend(frameon=False)
+                ax.set_xlabel(r"$H_T$ [GeV]")
+                ax.set_title(f"b-tagging variations (4j1b, {mass})")
+                fig.tight_layout()
+                fig.savefig(f"png_outputs/btagging_variations_4j1b_{mass}.png", dpi=300)
+                plt.close(fig)
+            break
 
-    
-    if "4j2b" in hist_dict and "zprimett500" in hist_dict["4j2b"]:
-        base = hist_dict["4j2b"]["zprimett500"].get("nominal")
-        if base is not None:
-            fig, ax = plt.subplots()
-            base.plot(label="nominal", linewidth=2, ax=ax)
-            # Try to plot pt_scale_up and pt_res_up if they exist
-            if "pt_scale_up" in hist_dict["4j2b"]["zprimett500"]:
-                hist_dict["4j2b"]["zprimett500"]["pt_scale_up"].plot(label="scale up", linewidth=2, ax=ax)
-            if "pt_res_up" in hist_dict["4j2b"]["zprimett500"]:
-                hist_dict["4j2b"]["zprimett500"]["pt_res_up"].plot(label="resolution up", linewidth=2, ax=ax)
-            ax.legend(frameon=False)
-            ax.set_xlabel(r"$m_{bjj}$ [GeV]")
-            ax.set_title("Jet energy variations (4j2b, zprimett500)")
-            fig.tight_layout()
-            fig.savefig("png_outputs/jet_energy_variations_4j2b_zprimett500.png", dpi=300)
-            plt.close(fig)
-
-
+    # jet energy variations in 4j2b
+    for mass in ["zprimett500", "zprimett600", "zprimett700", "zprimett800", "zprimett900"]:
+        if "4j2b" in hist_dict and mass in hist_dict["4j2b"]:
+            base = hist_dict["4j2b"][mass].get("nominal")
+            if base is not None:
+                fig, ax = plt.subplots()
+                base.plot(label="nominal", linewidth=2, ax=ax)
+                if "pt_scale_up" in hist_dict["4j2b"][mass]:
+                    hist_dict["4j2b"][mass]["pt_scale_up"].plot(label="scale up", linewidth=2, ax=ax)
+                if "pt_res_up" in hist_dict["4j2b"][mass]:
+                    hist_dict["4j2b"][mass]["pt_res_up"].plot(label="resolution up", linewidth=2, ax=ax)
+                ax.legend(frameon=False)
+                ax.set_xlabel(r"$m_{bjj}$ [GeV]")
+                ax.set_title(f"Jet energy variations (4j2b, {mass})")
+                fig.tight_layout()
+                fig.savefig(f"png_outputs/jet_energy_variations_4j2b_{mass}.png", dpi=300)
+                plt.close(fig)
+            break
 
 def find_signals(histograms, prefix="zprimett"):
     """Return sorted list of processes starting with 'prefix' seen in any channel."""
@@ -183,12 +171,9 @@ def find_signals(histograms, prefix="zprimett"):
                 procs.add(p)
     return sorted(procs)
 
-
-
 if __name__ == "__main__":
     all_hists = load_all_histograms(FILENAME)
 
-    
     if "4j1b" in all_hists:
         plot_stack(
             all_hists["4j1b"], "4j1b", "nominal",
@@ -205,7 +190,4 @@ if __name__ == "__main__":
             r"$\geq$ 4 jets, $\geq$ 2 b-tags"
         )
 
-    
     plot_variations(all_hists)
-
-    

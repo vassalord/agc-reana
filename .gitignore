@@ -18,4 +18,7 @@ utils/__pycache__/file_output.cpython-39.pyc
 utils/__pycache__/metrics.cpython-39.pyc
 utils/__pycache__/ml.cpython-39.pyc
 utils/__pycache__/rebinning.cpython-39.pyc
-
+Snakefile_old
+Snakefile_recast
+final_merging_old.ipynb
+final_merging_recast.ipynb
